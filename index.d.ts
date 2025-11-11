@@ -14,6 +14,7 @@ export type {
   Preset,
   ProcessCallback,
   Processor,
+  ReadonlyPluggableList,
   RunCallback,
   // `Settings` is typed and exposed below.
   TransformCallback,

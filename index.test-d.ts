@@ -548,6 +548,15 @@ expectType<Processor>(
   })
 )
 
+const PLUGINS = [
+  remarkParse,
+  remarkLint,
+  remarkLintImplicit,
+  remarkRehype,
+  rehypeStringify
+] as const
+expectType<Processor>(unified().use(PLUGINS))
+
 /**
  * Register our setting.
  */
